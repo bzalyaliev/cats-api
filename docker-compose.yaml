@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db-cats-api:
+    container_name: postgres_container
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5444:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: cats-api
