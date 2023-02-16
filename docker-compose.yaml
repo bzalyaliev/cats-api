@@ -2,7 +2,7 @@ version: '3'
 services:
   db-cats-api:
     container_name: postgres_container
-    image: postgres:latest
+    image: postgres:14
     restart: always
     ports:
       - "5444:5432"
